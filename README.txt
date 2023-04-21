@@ -1,8 +1,5 @@
 Wang Ruijue's Porfolio (Not completed)
 
-AJ
-aj@lkn.io | @ajlkn
-
 
 Credits:
 	Template:
