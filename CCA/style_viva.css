@@ -1,0 +1,340 @@
+/* Reset */
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+/* Main Styling */
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+
+main {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  margin: auto;
+}
+
+#welcome{
+  background: #85C1E9;
+  border-radius: 100px;
+  opacity: 0.7;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#welcome h2{
+  font-size: 60px;
+}
+
+#welcome p{
+  font-size: 30px;
+}
+
+#sidebar {
+  margin: auto;
+  float: right;
+  width: 29%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Utility Classes */
+.container1 {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: visible;
+  padding: 20px;
+}
+
+.text-primary {
+  color: #F39C12;
+}
+
+.lead {
+  font-size: 50px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #F7DC6F;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #F1948A;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+.clr {
+  clear: both;
+}
+
+.l-heading {
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+/* Navbar */
+#navbar {
+  background: #707B7C;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  position:fixed;
+  z-index:9999;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar .logo {
+  float: left;
+  padding: 10px;
+}
+
+#navbar .logo img{
+  height: 40px;
+  width: 40px;
+  margin-bottom: -10px;
+  border-radius: 50%;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hide nested ul by default */
+#navbar ul li ul {
+  display: none;
+  position: absolute;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: #444;
+  color: #F39C12;
+}
+
+#navbar ul li:hover a {
+  color: #F39C12;
+}
+
+/* Nested dropdown show */
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 250px;
+  margin-top: 1rem;
+  font-size: 15px;
+  z-index: 9999;
+}
+
+#navbar ul li:hover ul li {
+  display: block;
+  background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+  color: #F39C12;
+}
+
+#navbar ul li:hover ul li:hover {
+  background: #444;
+  color: #F39C12;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  color: #F39C12;
+  background: #fff;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: #444;
+}
+
+
+/* Showcase */
+#showcase {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  background: url('./img/viva1.jpg') no-repeat center center/cover;
+  opacity: 0.8;
+  animation:frams 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+
+}
+@keyframes frams {
+            0%{
+                background: url('./img/viva1.jpg') no-repeat center center/cover;
+                opacity: 0.8;
+                height: 800px;
+            }
+            33%{
+                background: url('./img/viva2.JPG') no-repeat center center/cover;
+                opacity: 0.8;
+                height: 800px;
+            }
+            66%{
+                background: url('./img/viva3.JPG') no-repeat center center/cover;
+                opacity: 0.8;
+                height: 800px;
+            }
+            100%{
+                background:url('./img/viva1.jpg') no-repeat center center/cover;
+                opacity: 0.8;
+                height: 800px;
+            }
+        }
+
+
+#showcase .showcase-content {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+@media(max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #28a745;
+}
+
+footer .social > * {
+    margin-right: 30px;
+}
+
+/* Home Info */
+#home-info {
+  height: 400px;
+}
