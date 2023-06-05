@@ -1,5 +1,6 @@
 Wang Ruijue's Porfolio (Not completed)
 
+Open the Porfolio webisite using Ruijue.github.io.
 
 Credits:
 	Template:
