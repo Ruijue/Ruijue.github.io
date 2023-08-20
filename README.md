@@ -1,19 +1,19 @@
 # Wang Ruijue's Porfolio (Not completed) #
 
-Open the Porfolio webisite using [Wang Ruijue Porfolio](Ruijue.github.io)
+Open the Porfolio webisite using [Ruijue.github.io](https://ruijue.github.io/)
 
-## Contents##
-### Home ###
-Self Introduction about me
+## Contents ##
+	Home:
+		Self Introduction about me
 
-### Project ### 
-List some school and business projects
+	Project:
+		List some school and business projects
 
-### CCA ###
-List some Co-curricular Activities (CCAs) participated at NUS
+	CCA:
+		List some Co-curricular Activities (CCAs) participated at NUS
 
-### Others ###
-Contain other information you may be interested in
+	Others:
+		Contain other information you may be interested in
 
 ## Credits ##
 	Template:
