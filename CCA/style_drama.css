@@ -149,6 +149,7 @@ main {
   color: #fff;
   overflow: hidden;
   width: 100%;
+  height: 60px;
   position:fixed;
   z-index:9999;
 }
@@ -319,6 +320,7 @@ footer {
     
     bottom: 0;
     width: 100%;
+    z-index:9999;
 }
 
 footer a {
