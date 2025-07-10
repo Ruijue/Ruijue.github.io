@@ -283,11 +283,11 @@
             const submitBtn = form.querySelector('button[type="submit"]');
             const statusMessage = document.getElementById('status-message');
             
-            // Check if Formspree is configured
-            if (form.action.includes('xovwgjpb')) {
-                showStatus('Please configure your Formspree form ID first!', 'error');
-                return;
-            }
+            // // Check if Formspree is configured
+            // if (form.action.includes('f/xovwgjpb')) {
+            //     showStatus('Please configure your Formspree form ID first!', 'error');
+            //     return;
+            // }
             
             // Validate form
             if (!validateForm(formData)) {
