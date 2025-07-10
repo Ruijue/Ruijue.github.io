@@ -270,10 +270,13 @@
 								<form id="contact-form">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="user_name" id="user_name" placeholder="Name" required />
+											<input type="text" name="name" id="name" placeholder="Name" required />
 										</div>
 										<div class="col-6 col-12-xsmall">
-											<input type="email" name="user_email" id="user_email" placeholder="Email" required />
+											<input type="email" name="email" id="email" placeholder="Email" required />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="designation" id="designation" placeholder="Designation" required />
 										</div>
 										<!-- Break -->
 										<div class="col-12">
@@ -303,18 +306,24 @@
 								<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 								<script>
 									(function() {
-										emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+										// Initialize EmailJS with your public key
+        								const EMAIL_PUBLIC_KEY = 'SRmPY4kY1jz4takkN';
+										emailjs.init(EMAIL_PUBLIC_KEY);
 									})();
 
 									document.getElementById("send-button").addEventListener("click", function() {
 										const form = document.getElementById("contact-form");
 										const formData = new FormData(form);
-
-										emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-											user_name: formData.get("user_name"),
-											user_email: formData.get("user_email"),
+										const EMAIL_SERVICE_ID = "service_1n5nopg";
+        								const EMAIL_TEMPLATE_ID = "template_gs4x0ab";
+										
+										emailjs.send(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, {
+											name: formData.get("name"),
+											email: formData.get("email"),
+											designation: formData.get("designation"), 
 											category: formData.get("category"),
-											message: formData.get("message")
+											message: formData.get("message"),
+											timestamp: new Date().toLocaleString() 
 										}).then(function(response) {
 											alert("Message sent successfully!");
 										}, function(error) {
