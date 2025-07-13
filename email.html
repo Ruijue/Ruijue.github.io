@@ -1,120 +1,115 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Form</title>
+<link href="assets/css/main.css" rel="stylesheet"/>
+<meta content="Contact Wang Ruijue - Get in touch for collaboration, questions, or business inquiries through this contact form." name="description"/></head>
 <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!-- Header -->
-        <header id="header">
-            <a href="index.html" class="logo">About me</a>
-        </header>
-
-        <!-- Main -->
-        <div id="main">
-            <section class="post">
-                <header class="major">
-                    <h2>Contact Me</h2>
-                    <p>I'd love to hear from you! Send me a message and I'll get back to you as soon as possible.</p>
-                </header>
-
-                <div id="status-message" class="status-message hidden"></div>
-
-                <form id="contactForm" action="https://formspree.io/f/xovwgjpb" method="POST">
-                    <div class="row gtr-uniform">
-                        <div class="col-6 col-12-xsmall">
-                            <label for="name">Full Name<span class="required">*</span></label>
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="col-6 col-12-xsmall">
-                            <label for="email">Email Address<span class="required">*</span></label>
-                            <input type="email" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="category">What's this about?<span class="required">*</span></label>
-                            <select name="category" id="category" required>
-                                <option value="">- Select -</option>
-                                <option value="make_friends">Make friends</option>
-                                <option value="ask_question">Ask a question</option>
-                                <option value="share_info">Share information</option>
-                                <option value="know_more">Know more about me</option>
-                                <option value="business">Business inquiry</option>
-                                <option value="others">Others</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label for="category">I am a:<span class="required">*</span></label>
-                            <select name="category" id="category" required>
-                                <option value="">- Select -</option>
-                                <option value="student">Student</option>
-                                <option value="working_professional">Working Professional</option>
-                                <option value="others">Others</option>
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label for="message">Your Message<span class="required">*</span></label>
-                            <textarea name="message" id="message" placeholder="Write your message here..." rows="6" required></textarea>
-                        </div>
-                        <div class="col-12">
-                            <ul class="actions">
-                                <li><button type="submit" class="button primary">Send Message</button></li>
-                                <li><button type="reset" class="button">Clear Form</button></li>
-                                <li><a href="index.html" class="button">Back to Main Page</a></li>
-                            </ul>
-                            <p>This form is powered by the Formspree API.</p>
-                        </div>
-                    </div>
-
-                    <!-- Hidden fields -->
-                    <input type="hidden" name="_subject" value="New Contact Form Message">
-                    <input type="hidden" name="_next" value="thank-you.html">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-            </section>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section class="split contact">
-                <section class="alt">
-                    <h3>Address</h3>
-                    <p>Residence at the National University of Sinagpore<br />
-                    </p>
-                </section>
-                <section>
-                    <h3>Phone</h3>
-                    <p>(+65) 85871467 | (+86) 18955557773</p>
-                </section>
-                <section>
-                    <h3>Email</h3>
-                    <p><a href="mailto:wangruijue527@outlook.com">wangruijue527@outlook.com</a></p>
-                </section>
-                <section>
-                    <h3>Social</h3>
-                    <ul class="icons alt">
-                        <li><a href="https://www.linkedin.com/in/ruijue/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://www.facebook.com/wang.ruijue.9?mibextid=LQQJ4d" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.instagram.com/ruijue527" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="https://github.com/Ruijue" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    </ul>
-                </section>
-            </section>
-        </footer>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
+<!-- Wrapper -->
+<div id="wrapper">
+<!-- Header -->
+<header id="header">
+<a class="logo" href="index.html">About me</a>
+</header>
+<!-- Main -->
+<div id="main"><h1>Contact Me</h1>
+<section class="post">
+<header class="major">
+<h2>Contact Me</h2>
+<p>I'd love to hear from you! Send me a message and I'll get back to you as soon as possible.</p>
+</header>
+<div class="status-message hidden" id="status-message"></div>
+<form action="https://formspree.io/f/xovwgjpb" id="contactForm" method="POST">
+<div class="row gtr-uniform">
+<div class="col-6 col-12-xsmall">
+<label for="name">Full Name<span class="required">*</span></label>
+<input id="name" name="name" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="col-6 col-12-xsmall">
+<label for="email">Email Address<span class="required">*</span></label>
+<input id="email" name="email" placeholder="Your Email" required="" type="email"/>
+</div>
+<div class="col-12">
+<label for="category">What's this about?<span class="required">*</span></label>
+<select id="category" name="category" required="">
+<option value="">- Select -</option>
+<option value="make_friends">Make friends</option>
+<option value="ask_question">Ask a question</option>
+<option value="share_info">Share information</option>
+<option value="know_more">Know more about me</option>
+<option value="business">Business inquiry</option>
+<option value="others">Others</option>
+</select>
+</div>
+<div class="col-12">
+<label for="user-type">I am a:<span class="required">*</span></label>
+<select id="user-type" name="user-type" required="">
+<option value="">- Select -</option>
+<option value="student">Student</option>
+<option value="working_professional">Working Professional</option>
+<option value="others">Others</option>
+</select>
+</div>
+<div class="col-12">
+<label for="message">Your Message<span class="required">*</span></label>
+<textarea id="message" name="message" placeholder="Write your message here..." required="" rows="6"></textarea>
+</div>
+<div class="col-12">
+<ul class="actions">
+<li><button class="button primary" type="submit">Send Message</button></li>
+<li><button class="button" type="reset">Clear Form</button></li>
+<li><a class="button" href="index.html">Back to Main Page</a></li>
+</ul>
+<p>This form is powered by the Formspree API.</p>
+</div>
+</div>
+<!-- Hidden fields -->
+<input name="_subject" type="hidden" value="New Contact Form Message"/>
+<input name="_next" type="hidden" value="thank-you.html"/>
+<input name="_captcha" type="hidden" value="false"/>
+</form>
+</section>
+</div>
+<!-- Footer -->
+<footer id="footer">
+<section class="split contact">
+<section class="alt">
+<h3>Address</h3>
+<p>Residence at the National University of Singapore<br/>
+</p>
+</section>
+<section>
+<h3>Phone</h3>
+<p>(+65) 85871467 | (+86) 18955557773</p>
+</section>
+<section>
+<h3>Email</h3>
+<p><a href="mailto:wangruijue527@outlook.com">wangruijue527@outlook.com</a></p>
+</section>
+<section>
+<h3>Social</h3>
+<ul class="icons alt">
+<li><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/ruijue/"><span class="label">LinkedIn</span></a></li>
+<li><a class="icon brands fa-facebook-f" href="https://www.facebook.com/wang.ruijue.9?mibextid=LQQJ4d"><span class="label">Facebook</span></a></li>
+<li><a class="icon brands fa-instagram" href="https://www.instagram.com/ruijue527"><span class="label">Instagram</span></a></li>
+<li><a class="icon brands fa-github" href="https://github.com/Ruijue"><span class="label">GitHub</span></a></li>
+</ul>
+</section>
+</section>
+</footer>
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
