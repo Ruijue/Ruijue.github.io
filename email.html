@@ -64,11 +64,12 @@
 <li><a class="button" href="index.html">Back to Main Page</a></li>
 </ul>
 <p>This form is powered by the Formspree API.</p>
+<p><small><strong>Having trouble with the form?</strong> You can also reach me directly at <a href="mailto:wangruijue527@outlook.com">wangruijue527@outlook.com</a></small></p>
 </div>
 </div>
 <!-- Hidden fields -->
 <input name="_subject" type="hidden" value="New Contact Form Message"/>
-<input name="_next" type="hidden" value="thank-you.html"/>
+<input name="_next" type="hidden" value="https://ruijue.github.io/thank-you.html"/>
 <input name="_captcha" type="hidden" value="false"/>
 </form>
 </section>
@@ -140,19 +141,29 @@
                 if (response.ok) {
                     showStatus('Thank you! Your message has been sent successfully.', 'success');
                     form.reset();
+                    // Redirect to thank you page after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = 'thank-you.html';
+                    }, 2000);
                 } else {
-                    response.json().then(data => {
+                    return response.json().then(data => {
                         if (data.errors) {
                             showStatus('Oops! There were some errors: ' + data.errors.map(error => error.message).join(', '), 'error');
                         } else {
-                            showStatus('Oops! There was a problem sending your message. Please try again.', 'error');
+                            showStatus('Oops! There was a problem sending your message. Status: ' + response.status, 'error');
                         }
+                    }).catch(() => {
+                        showStatus('Oops! There was a problem sending your message. Status: ' + response.status, 'error');
                     });
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
-                showStatus('Network error. Please check your connection and try again.', 'error');
+                if (error.name === 'TypeError' && error.message.includes('fetch')) {
+                    showStatus('Network error: Unable to connect to the server. Please check your internet connection and try again.', 'error');
+                } else {
+                    showStatus('Network error: ' + error.message + '. Please try again.', 'error');
+                }
             })
             .finally(() => {
                 submitBtn.textContent = originalText;
