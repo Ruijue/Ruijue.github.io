@@ -167,6 +167,7 @@ main {
   height: 40px;
   width: 40px;
   margin-bottom: -10px;
+  border-radius: 50%;
 }
 
 #navbar ul {
@@ -251,29 +252,29 @@ main {
   justify-content: center;
   text-align: center;
   padding: 0 2rem;
-  background: url('./img/drama1.jpeg') no-repeat center center/cover;
+  background: url('./img/drama1.jpg') no-repeat center center/cover;
   opacity: 0.8;
   animation:frams 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 
 }
 @keyframes frams {
             0%{
-                background: url('./img/drama1.JPG') no-repeat center center/cover;
+                background: url('./img/drama1.jpg') no-repeat center center/cover;
                 opacity: 0.8;
                 height: 800px;
             }
             33%{
-                background: url('./img/drama2.jpeg') no-repeat center center/cover;
+                background: url('./img/drama2.jpg') no-repeat center center/cover;
                 opacity: 0.8;
                 height: 800px;
             }
             66%{
-                background: url('./img/drama3.JPG') no-repeat center center/cover;
+                background: url('./img/drama3.jpg') no-repeat center center/cover;
                 opacity: 0.8;
                 height: 800px;
             }
             100%{
-                background:url('./img/drama1.JPG') no-repeat center center/cover;
+                background:url('./img/drama1.jpg') no-repeat center center/cover;
                 opacity: 0.8;
                 height: 800px;
             }
@@ -333,6 +334,8 @@ footer a:hover {
 
 footer .social > * {
     margin-right: 30px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Home Info */
