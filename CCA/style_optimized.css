@@ -46,26 +46,14 @@
 /* Showcase optimization */
 #showcase {
   margin-top: 60px; /* Space for navbar */
-  height: 500px !important; /* Override the animation height */
-  max-height: 60vh; /* Responsive height */
+  height: 600px !important; /* Override the animation height */
+  max-height: 70vh; /* Responsive height */
   position: relative;
   z-index: 1; /* Lower than navbar */
 }
 
-@keyframes frams {
-  0%, 100% {
-    height: 500px !important; /* Override animation height */
-    max-height: 60vh !important;
-  }
-  33% {
-    height: 500px !important;
-    max-height: 60vh !important;
-  }
-  66% {
-    height: 500px !important;
-    max-height: 60vh !important;
-  }
-}
+/* Don't override the animation in CSS - let the original animations work */
+/* Just adjust the height */
 
 #showcase .showcase-content {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
