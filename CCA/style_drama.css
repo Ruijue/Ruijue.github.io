@@ -251,7 +251,7 @@ main {
   justify-content: center;
   text-align: center;
   padding: 0 2rem;
-  background: url('./img/drama1.JPG') no-repeat center center/cover;
+  background: url('./img/drama1.jpeg') no-repeat center center/cover;
   opacity: 0.8;
   animation:frams 10s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
 
