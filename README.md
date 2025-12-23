@@ -1,32 +1,27 @@
-# Wang Ruijue's Porfolio (Not completed) #
+# Wang Ruijue's Portfolio
 
-Open the Porfolio webisite using [Ruijue.github.io](https://ruijue.github.io/)
+This repository contains the source code for my personal portfolio website, showcasing my projects, skills, and experiences.
 
-## Contents ##
-	Home:
-		Self Introduction about me
+**Live Site:** [ruijue.github.io](https://ruijue.github.io/)
 
-	Project:
-		List some school and business projects
+## Contents
 
-	CCA:
-		List some Co-curricular Activities (CCAs) participated at NUS
+-   **Home:** A brief self-introduction.
+-   **Projects:** A collection of my school and business-related projects.
+-   **CCA:** An overview of my Co-curricular Activities (CCAs) at the National University of Singapore (NUS).
+-   **Others:** Additional information and interests.
 
-	Others:
-		Contain other information you may be interested in
+## Technologies Used
 
-## Credits ##
-	Template:
-		Massively by HTML5 UP
-		html5up.net | @ajlkn
+-   HTML5
+-   CSS3 / Sass
+-   JavaScript
+-   [jQuery](https://jquery.com/)
+-   [Scrollex](https://github.com/ajlkn/jquery.scrollex)
+-   [Responsive Tools](https://github.com/ajlkn/responsive-tools)
 
-	Demo Images:
-		Unsplash (unsplash.com)
+## Credits
 
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+-   **Template:** Massively by [HTML5 UP](https://html5up.net/) (@ajlkn)
+-   **Demo Images:** [Unsplash](https://unsplash.com/)
+-   **Icons:** [Font Awesome](https://fontawesome.io/)
