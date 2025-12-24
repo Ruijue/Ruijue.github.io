@@ -3162,8 +3162,9 @@ input, select, textarea {
 		}
 
 		.pagination .next, .pagination .previous {
-			text-decoration: none;
-			padding: 0 1.75rem;
+			position: relative;
+			padding-right: 2.25em;
+			margin-left: 0.5em;
 		}
 
 			.pagination .next:before, .pagination .previous:before {
