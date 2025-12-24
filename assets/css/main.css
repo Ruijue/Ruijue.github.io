@@ -4485,7 +4485,8 @@ input, select, textarea {
 	}
 
 .post p,
-.posts p {
+.posts p,
+.posts article header p {
   text-align: center;
 }
 
