@@ -256,3 +256,23 @@
 		}
 
 })(jQuery);
+
+// Modal
+var modal = document.getElementById('imageModal');
+var modalImg = document.getElementById("modalImage");
+var galleryItems = document.getElementsByClassName("gallery-item");
+for (var i = 0; i < galleryItems.length; i++) {
+  galleryItems[i].onclick = function(e){
+    e.preventDefault();
+    modal.style.display = "block";
+    modalImg.src = this.href;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+if (span) {
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+}
