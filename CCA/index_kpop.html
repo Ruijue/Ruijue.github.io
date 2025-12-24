@@ -42,15 +42,28 @@
 <header class="major">
 <h1>Kpop</h1>
 </header>
-<h2>Gallery</h2>
+<div class="actions special">
+    <a href="index_kpop.html" class="button primary">Home</a>
+    <a href="#" class="button">Videos (Coming Soon)</a>
+</div>
+<h2 style="text-align: center;">Gallery</h2>
 <div class="box alt">
 <div class="row gtr-50 gtr-uniform">
-<div class="col-6"><span class="image fit"><img src="./img/kpop1.JPG" alt="Kpop image 1"></span></div>
-<div class="col-6"><span class="image fit"><img src="./img/kpop2.JPG" alt="Kpop image 2"></span></div>
+<div class="col-6"><a href="./img/kpop1.JPG" class="image fit gallery-item"><img src="./img/kpop1.JPG" alt="Kpop image 1"></a></div>
+<div class="col-6"><a href="./img/kpop2.JPG" class="image fit gallery-item"><img src="./img/kpop2.JPG" alt="Kpop image 2"></a></div>
 </div>
 </div>
 </section>
 </div>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+  <img class="modal-content" id="modalImage">
+</div>
+
 <!-- Footer -->
 <footer id="footer">
 <section class="split contact">
@@ -76,3 +89,111 @@
 <script src="../assets/js/main.js"></script>
 </body>
 </html>
+
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('imageModal');
+    var modalImg = document.getElementById("modalImage");
+    var galleryItems = document.querySelectorAll('.gallery-item');
+    var currentIndex;
+
+    galleryItems.forEach(function(item, index) {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+            modalImg.src = this.href;
+            currentIndex = index;
+        });
+    });
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    var prev = document.querySelector('.prev');
+    prev.onclick = function() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : galleryItems.length - 1;
+        modalImg.src = galleryItems[currentIndex].href;
+    }
+
+    var next = document.querySelector('.next');
+    next.onclick = function() {
+        currentIndex = (currentIndex < galleryItems.length - 1) ? currentIndex + 1 : 0;
+        modalImg.src = galleryItems[currentIndex].href;
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+</script>
