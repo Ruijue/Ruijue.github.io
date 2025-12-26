@@ -2610,6 +2610,18 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+		.icon.brands.fa-xiaohongshu:before {
+			content: none;
+		}
+
+		.icon.brands.fa-xiaohongshu .xiaohongshu-icon {
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			vertical-align: -0.125em;
+			fill: currentColor;
+		}
+
 /* Image */
 
 	.image {
