@@ -2614,7 +2614,6 @@ input, select, textarea {
 			content: '';
 			width: 2.25rem;
 			height: 2.25rem;
-			/* line-height: 2.25rem; */
 			line-height: inherit;
 			display: inline-block;
 			text-align: center;
@@ -2628,14 +2627,14 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			vertical-align: baseline;
-			/* vertical-align: middle; */
 		}
 
 		.icon.brands.fa-xiaohongshu .xiaohongshu-icon {
 			position: absolute;
 			left: 1.125rem;
 			top: 1.125rem;
-			transform: translate(-50%, -50%);
+			/* transform: translate(-50%, -50%); */
+			transform: translate(-50%, -50%) translateY(0.05em);
 			width: 1.25rem;
 			height: 1.25rem;
 			fill: currentColor;
@@ -2668,7 +2667,8 @@ input, select, textarea {
 		#nav ul.icons li .icon.brands.fa-xiaohongshu .xiaohongshu-icon {
 			left: 1.125rem;
 			top: 1.125rem;
-			transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%) translateY(0.05em);
+			/* transform: translate(-50%, -50%); */
 		}
 
 /* Image */
