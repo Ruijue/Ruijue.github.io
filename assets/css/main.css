@@ -2614,7 +2614,8 @@ input, select, textarea {
 			content: '';
 			width: 2.25rem;
 			height: 2.25rem;
-			line-height: 2.25rem;
+			/* line-height: 2.25rem; */
+			line-height: inherit;
 			display: inline-block;
 			text-align: center;
 			border-radius: 100%;
@@ -2626,7 +2627,8 @@ input, select, textarea {
 		.icon.brands.fa-xiaohongshu {
 			position: relative;
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: baseline;
+			/* vertical-align: middle; */
 		}
 
 		.icon.brands.fa-xiaohongshu .xiaohongshu-icon {
