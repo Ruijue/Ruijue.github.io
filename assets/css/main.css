@@ -2619,6 +2619,7 @@ input, select, textarea {
 			text-align: center;
 			border-radius: 100%;
 			font-size: 1.25rem;
+			vertical-align: middle;
 		}
 
 		.icon.brands.fa-xiaohongshu {
@@ -2629,8 +2630,8 @@ input, select, textarea {
 
 		.icon.brands.fa-xiaohongshu .xiaohongshu-icon {
 			position: absolute;
-			left: 50%;
-			top: 50%;
+			left: 1.125rem;
+			top: 1.125rem;
 			transform: translate(-50%, -50%);
 			width: 1.25rem;
 			height: 1.25rem;
