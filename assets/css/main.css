@@ -2619,6 +2619,9 @@ input, select, textarea {
 			text-align: center;
 			border-radius: 100%;
 			font-size: 1.25rem;
+			vertical-align: middle;
+			position: relative;
+			top: 0.05rem;
 		}
 
 		.icon.brands.fa-xiaohongshu {
@@ -2630,7 +2633,7 @@ input, select, textarea {
 		.icon.brands.fa-xiaohongshu .xiaohongshu-icon {
 			position: absolute;
 			left: 1.125rem;
-			top: 2rem;
+			top: 1.125rem;
 			transform: translate(-50%, -50%);
 			width: 1.25rem;
 			height: 1.25rem;
@@ -2663,7 +2666,7 @@ input, select, textarea {
 
 		#nav ul.icons li .icon.brands.fa-xiaohongshu .xiaohongshu-icon {
 			left: 1.125rem;
-			top: 2rem;
+			top: 1.125rem;
 			transform: translate(-50%, -50%);
 		}
 
