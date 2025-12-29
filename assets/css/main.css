@@ -4626,27 +4626,15 @@ input, select, textarea {
   object-fit: cover;
   width: 100%;
 }
-/*
-   Pagination Button Fix for #main footer
-   --------------------------------------------------------------------------------
-*/
-
-/* Target only pagination inside the main page footer */
-#main > footer .pagination a.next {
-    margin-left: -2px; /* Match the other buttons */
+/* Pagination Fix for .next button */
+.pagination a.next {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem; /* Match default button padding */
 }
 
-#main > footer .pagination a.next:before {
-    float: none; /* Disable the float */
-    order: 1; /* Move the icon to the end */
-    margin-left: 0.75em; /* Adjust spacing */
-}
-
-#main > footer .pagination a.next:hover {
-    color: #18bfef !important; /* Explicitly set hover color */
-    border-color: #18bfef;
+.pagination a.next:before {
+    float: none;
+    order: 1;
+    margin-left: 0.5em;
 }
